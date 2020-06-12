@@ -1,0 +1,20 @@
+rust
+$ cargo run
+message_arr     [de5b9eb9e7c5592930eb2e30a01369c36586d872082ed8181ee83d2a0ec20f04]
+message_arr.len 32
+seckey          [510f96a8efd0b11e211733c1ac5e3fa6f3d3fcdd62869e376c47decb3e14fea1]
+seckey.len      32
+serialized      [03adb8de4bfb65db2cfd6120d55c6526ae9c52e675db7e47308636534ba7786110]
+serialized.len  33
+signature       [8738487ebe69b93d8e51583be8eee50bb4213fc49c767d329632730cc193b873554428fc936ca3569afc15f1c9365f6591d6251a89fee9c9ac661116824d3a13]
+signature.len   64
+
+javascript
+$ node ../verify
+msg              de5b9eb9e7c5592930eb2e30a01369c36586d872082ed8181ee83d2a0ec20f04
+privKey          510f96a8efd0b11e211733c1ac5e3fa6f3d3fcdd62869e376c47decb3e14fea1
+pubKeyAsBuffer   03adb8de4bfb65db2cfd6120d55c6526ae9c52e675db7e47308636534ba7786110
+sigObj           8738487ebe69b93d8e51583be8eee50bb4213fc49c767d329632730cc193b873554428fc936ca3569afc15f1c9365f6591d6251a89fee9c9ac661116824d3a13 1
+verify           true
+pub_key_recoverd 03adb8de4bfb65db2cfd6120d55c6526ae9c52e675db7e47308636534ba7786110
+match true

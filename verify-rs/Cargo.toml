@@ -1,0 +1,21 @@
+[package]
+name = "verify"
+version = "0.1.0"
+authors = ["Pascal <psq@nanorails.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.7.3"
+rand_core = "0.5.1"
+hex = "0.3.1"
+hex-slice = "0.1.4"
+# rand = "=0.7.2"
+# libsecp256k1 = "0.3.5"
+
+[dependencies.secp256k1]
+# version = "0.17.2"
+version = "0.11.6"
+# features = ["serde", "rand-std", "recovery"]
+features = ["serde"]
